@@ -39,3 +39,5 @@ This is a lightweight client-side weather dashboard that:
      - Node: `npx http-server` (or any static server)
 3. Use the search box to find a city or click the location (📍) button to use your current location.
 4. Toggle units using the unit switch.
+
+That's it. :)
