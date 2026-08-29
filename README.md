@@ -39,17 +39,3 @@ This is a lightweight client-side weather dashboard that:
      - Node: `npx http-server` (or any static server)
 3. Use the search box to find a city or click the location (📍) button to use your current location.
 4. Toggle units using the unit switch.
-
-## Notes and next steps
-
-- Open‑Meteo is free and requires no API key — good for demos and small apps.
-- Possible enhancements:
-  - Use icon set (SVG/PNG) instead of emoji
-  - Charts for hourly temperatures (Chart.js)
-  - Caching results or offline support (service worker)
-  - Deploy to GitHub Pages or Netlify
-  - Add tests and CI
-
-## License
-
-MIT
