@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Weather Dashboard</h1>
+      <div class="controls">
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Search city (e.g. London)" aria-label="Search city" />
+          <button id="searchBtn" title="Search">Search</button>
+          <button id="geoBtn" title="Use current location">📍</button>
+          <ul id="suggestions" class="suggestions" hidden></ul>
+        </div>
+        <div class="prefs">
+          <label class="unit-switch">
+            <input type="checkbox" id="unitToggle" />
+            <span id="unitLabel">°C</span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <section id="status" class="status">Enter a city or use location →</section>
+
+    <section class="weather-grid">
+      <article id="currentCard" class="card current" hidden>
+        <div class="top">
+          <div id="location" class="location"></div>
+          <div id="time" class="time"></div>
+        </div>
+        <div class="main">
+          <div class="icon" id="currentIcon">☀️</div>
+          <div class="temps">
+            <div id="currentTemp" class="temp">--°</div>
+            <div id="currentDesc" class="desc">--</div>
+          </div>
+        </div>
+        <div class="meta">
+          <div>Wind: <span id="wind">--</span></div>
+          <div>Humidity: <span id="humidity">--</span></div>
+          <div>Precip: <span id="precip">--</span></div>
+        </div>
+      </article>
+
+      <aside id="hourlyCard" class="card hourly" hidden>
+        <h3>Next 24 hours</h3>
+        <div id="hourlyList" class="hourly-list"></div>
+      </aside>
+
+      <section id="forecastCard" class="card forecast" hidden>
+        <h3>7-day Forecast</h3>
+        <div id="forecastList" class="forecast-list"></div>
+      </section>
+    </section>
+
+    <footer class="footer">Data from Open-Meteo (no API key). Built with HTML/CSS/JS.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
